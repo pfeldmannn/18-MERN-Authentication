@@ -19,7 +19,7 @@ const LoginForm = ({}: { handleModalClose: () => void }) => {
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
 
-  const [loginUser, {error, data}] = useMutation(LOGIN_USER);
+  const [loginUser] = useMutation(LOGIN_USER);
 
   
 

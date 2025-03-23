@@ -17,7 +17,7 @@ const SignupForm = ({}: { handleModalClose: () => void }) => {
   // set state for alert
   const [showAlert, setShowAlert] = useState(false);
 
-  const [addUser, { error, data }] = useMutation(ADD_USER);
+  const [addUser] = useMutation(ADD_USER);
   
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
